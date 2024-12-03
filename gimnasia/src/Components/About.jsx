@@ -2,7 +2,7 @@ import miliabout from "../assets/miliabout.png";
 
 const About = () => {
   return (
-    <section className="container mx-auto mb-8" id="about">
+    <section className="container mx-auto mb-8" id="About">
       <h1 className=" mb-8 text-center text-5xl tracking-tighter lg:text-7xl">
         Nuestra Escuela
       </h1>

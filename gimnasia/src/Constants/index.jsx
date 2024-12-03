@@ -3,9 +3,9 @@ import contenido3 from "../assets/contenidoImg/contenido3.png";
 import contenido4 from "../assets/contenidoImg/contenido4.png";
 
 export const navItems = [
-  { label: "Nosotros", href: "#" },
-  { label: "Contenido", href: "#" },
-  { label: "Horarios", href: "#" },
+  { label: "Nosotros", href: "#About" },
+  { label: "Contenido", href: "#Content" },
+  { label: "Horarios", href: "#Schedule" },
   { label: "Galeria", href: "#" },
 ];
 
