@@ -2,30 +2,31 @@ import miliabout from "../assets/miliabout.png";
 
 const About = () => {
   return (
-    <div className="flex justify-between w-full h-full relative bg-gradient-to-tr from-pink-600 rounded-lg">
-      <div className=" flex flex-col w-2/3 gap-y-10 items-center justify-center text-center">
-        <h1 className="text-7xl text-white text-center">QUIENES SOMOS</h1>
-        <p className="text-white text-center ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id
-          quasi dicta voluptatum. Hic, corrupti dolorem inventore eligendi
-          quibusdam quam accusantium, ipsa expedita recusandae repellat vitae
-          qui accusamus deserunt magnam!
-        </p>
-        <button
-          className=" w-1/2 text-pink-500 bg-slate-100 py-2 px-3 rounded-md
-        hover:bg-gradient-to-r from-purple-900 to-purple-400 hover:text-white hover:shadow-lg"
-        >
-          Contactanos
-        </button>
+    <section className="container mx-auto mb-8" id="about">
+      <h1 className=" mb-8 text-center text-5xl tracking-tighter lg:text-7xl">
+        Nuestra Escuela
+      </h1>
+      <div className="flex flex-wrap">
+        <div className="w-full p-4 lg:w-1/2">
+          <img src={miliabout} className="rounded-3xl lg:-rotate-3" />
+        </div>
+        <div className="w-full px-2 lg:w-1/2">
+          <h2 className="text-4xl tracking-tighter lg:text-6xl">
+            Que es la gimnasia artistica?
+          </h2>
+          <div className="mb-8 mt-1 h-2 w-56 bg-rose-400 lg:-rotate-3" />
+          <p className="m-8 text-2xl leading-relaxed tracking-tight lg:max-w-xl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            ullam fugit sit, minus aut voluptas cumque numquam. Fugiat
+            aspernatur temporibus eveniet eius enim! Esse saepe, impedit quas
+            officia qui delectus. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Tempora ullam fugit sit, minus aut voluptas cumque
+            numquam. Fugiat aspernatur temporibus eveniet eius enim! Esse saepe,
+            impedit quas officia qui delectus.
+          </p>
+        </div>
       </div>
-      <div>
-        <img
-          className="object-contain rounded-md shadow-xl shadow-slate-950"
-          src={miliabout}
-          alt=""
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 
