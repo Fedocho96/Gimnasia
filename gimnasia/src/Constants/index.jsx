@@ -1,6 +1,19 @@
+//imagenes para la seccion contenido
 import contenido1 from "../assets/contenidoImg/contenido1.png";
 import contenido3 from "../assets/contenidoImg/contenido3.png";
 import contenido4 from "../assets/contenidoImg/contenido4.png";
+
+//imagenes para la galeria
+import galeria1 from "../assets/galeria/galeria1.png";
+import galeria2 from "../assets/galeria/galeria2.png";
+import galeria3 from "../assets/galeria/galeria3.png";
+import galeria4 from "../assets/galeria/galeria4.png";
+import galeria5 from "../assets/galeria/galeria5.png";
+import galeria6 from "../assets/galeria/galeria6.png";
+import galeria7 from "../assets/galeria/galeria7.png";
+import galeria8 from "../assets/galeria/galeria8.png";
+import galeria9 from "../assets/galeria/galeria9.png";
+import galeria10 from "../assets/galeria/galeria10.png";
 
 export const navItems = [
   { label: "Nosotros", href: "#About" },
@@ -125,4 +138,17 @@ export const scheduleData = [
       { time: "12:30-13:30", type: "Pole Free", spots: 7 },
     ],
   },
+];
+
+export const galery = [
+  { image: galeria1, id: 1 },
+  { image: galeria2, id: 2 },
+  { image: galeria3, id: 3 },
+  { image: galeria4, id: 4 },
+  { image: galeria5, id: 5 },
+  { image: galeria6, id: 6 },
+  { image: galeria7, id: 7 },
+  { image: galeria8, id: 8 },
+  { image: galeria9, id: 9 },
+  { image: galeria10, id: 10 },
 ];
