@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import mililogo from "../assets/mililogo.png";
 import { navItems } from "../Constants";
+import { easeInOut, motion } from "framer-motion";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -31,9 +32,18 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <button className=" text-white bg-gradient-to-r from-pink-700 to-pink-400 py-2 px-3 rounded-md">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+              transition={{
+                duration: 0.125,
+                ease: "easeInOut",
+              }}
+              href="#Footer"
+              className=" text-white bg-gradient-to-r from-pink-700 to-pink-400 py-2 px-3 rounded-md"
+            >
               Contactanos
-            </button>
+            </motion.a>
           </div>
 
           <div className="lg:hidden md:flex flex-col justify-end">
@@ -45,22 +55,37 @@ const Navbar = () => {
 
         {mobileDrawerOpen && (
           <div
-            className="fixed right-0 z-20 bg-pink-200 w-full p-12 flex flex-col jusify-center
-             items-center lg:hidden"
+            className="fixed right-0 z-20 mt-3 bg-pink-200 w-full p-5 flex flex-col jusify-center
+             items-center lg:hidden border border-t-1 border-purple-200 bg-opacity-90 "
           >
             <ul>
               {navItems.map((item, index) => (
-                <li
+                <motion.li
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+                  transition={{
+                    duration: 0.125,
+                    ease: "easeInOut",
+                  }}
                   key={index}
                   className="py-4 bg-slate-50 border rounded-full text-center border-pink-800 p-3 m-3 w-auto"
                 >
                   <a href={item.href}>{item.label}</a>
-                </li>
+                </motion.li>
               ))}
             </ul>
-            <button className=" pt-3 mt-2 text-white bg-gradient-to-r from-pink-700 to-pink-400 py-2 px-3 rounded-md">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+              transition={{
+                duration: 0.125,
+                ease: "easeInOut",
+              }}
+              href="#Footer"
+              className=" pt-3 mt-2 text-white bg-gradient-to-r from-pink-700 to-pink-400 py-2 px-3 rounded-md"
+            >
               Contactanos
-            </button>
+            </motion.a>
           </div>
         )}
       </div>

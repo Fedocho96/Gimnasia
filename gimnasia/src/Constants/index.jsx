@@ -19,7 +19,7 @@ export const navItems = [
   { label: "Nosotros", href: "#About" },
   { label: "Contenido", href: "#Content" },
   { label: "Horarios", href: "#Schedule" },
-  { label: "Galeria", href: "#" },
+  { label: "Galeria", href: "#Galery" },
 ];
 
 export const content = [

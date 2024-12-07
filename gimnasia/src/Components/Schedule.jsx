@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { scheduleData } from "../Constants";
 
 const Schedule = () => {
@@ -8,7 +9,12 @@ const Schedule = () => {
         Horarios
       </h2>
 
-      <div className="min-h-screen bg-[#8B4B76] relative overflow-hidden p-8 md:p-16">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="min-h-screen bg-[#8B4B76] relative overflow-hidden p-8 md:p-16"
+      >
         {/* Content */}
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl font-light text-white mb-12">
@@ -51,7 +57,7 @@ const Schedule = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
