@@ -1,9 +1,9 @@
-import About from "./Components/About";
-import Content from "./Components/Content";
-import Footer from "./Components/Footer";
-import Galery from "./Components/Galery";
-import Navbar from "./Components/Navbar";
-import Schedule from "./Components/Schedule";
+import About from "./Sections/About";
+import Content from "./Sections/Content";
+import Footer from "./Sections/Footer";
+import Gallery from "./Sections/Gallery";
+import Navbar from "./Sections/Navbar";
+import Schedule from "./Sections/Schedule";
 import { motion } from "framer-motion";
 
 export default function App() {
@@ -14,11 +14,12 @@ export default function App() {
         <About />
         <Content />
         <Schedule />
-        <Galery />
+        <Gallery />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mx-auto py-5 px-6 bg-[#8E4F6E]"
       >

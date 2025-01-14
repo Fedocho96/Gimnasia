@@ -14,6 +14,14 @@ import galeria7 from "../assets/galeria/galeria7.png";
 import galeria8 from "../assets/galeria/galeria8.png";
 import galeria9 from "../assets/galeria/galeria9.png";
 import galeria10 from "../assets/galeria/galeria10.png";
+import galeria11 from "../assets/galeria/galeria11.png";
+import galeria12 from "../assets/galeria/galeria12.png";
+import galeria13 from "../assets/galeria/galeria13.png";
+import galeria14 from "../assets/galeria/galeria14.png";
+import galeria15 from "../assets/galeria/galeria15.png";
+import galeria16 from "../assets/galeria/galeria16.png";
+import galeria17 from "../assets/galeria/galeria17.png";
+import galeria18 from "../assets/galeria/galeria18.png";
 
 export const navItems = [
   { label: "Nosotros", href: "#About" },
@@ -140,15 +148,34 @@ export const scheduleData = [
   },
 ];
 
-export const galery = [
-  { image: galeria1, id: 1 },
-  { image: galeria2, id: 2 },
-  { image: galeria3, id: 3 },
-  { image: galeria4, id: 4 },
-  { image: galeria5, id: 5 },
-  { image: galeria6, id: 6 },
-  { image: galeria7, id: 7 },
-  { image: galeria8, id: 8 },
-  { image: galeria9, id: 9 },
-  { image: galeria10, id: 10 },
+export const gallery = [
+  {
+    id: 1,
+    title: "Cierre de fin de año",
+    images: [
+      galeria1,
+      galeria2,
+      galeria3,
+      galeria4,
+      galeria5,
+      galeria6,
+      galeria7,
+      galeria8,
+      galeria9,
+      galeria10,
+      galeria11,
+      galeria12,
+      galeria13,
+      galeria14,
+      galeria15,
+      galeria16,
+      galeria17,
+      galeria18,
+    ],
+  },
+  {
+    id: 2,
+    title: "Clases",
+    images: [galeria4, galeria5, galeria6],
+  },
 ];
