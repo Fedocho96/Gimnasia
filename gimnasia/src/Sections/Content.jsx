@@ -40,7 +40,7 @@ const Content = () => {
               <img
                 src={contenido.image}
                 alt={contenido.title}
-                className="w-full h-auto object-cover rounded-3xl"
+                className="w-full max-h-[520px] object-cover rounded-3xl"
               />
             </div>
 

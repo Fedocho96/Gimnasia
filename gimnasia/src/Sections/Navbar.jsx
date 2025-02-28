@@ -55,8 +55,8 @@ const Navbar = () => {
                 duration: 0.125,
                 ease: "easeInOut",
               }}
-              onClick={(e) => handleNavClick(e, "Footer")}
               href="#Footer"
+              onClick={(e) => handleNavClick(e, "Footer")}
               className=" text-white bg-gradient-to-r from-pink-700 to-pink-400 py-2 px-3 rounded-md"
             >
               Contactanos

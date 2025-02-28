@@ -21,7 +21,7 @@ export const content = [
   },
   {
     number: 2,
-    image: contenido1,
+    image: "/contenido2.png",
     title: "barra asimetrica",
     label:
       " Trabajo en altura y dinamismo, potenciando la agilidad, el control corporal y la fluidez en los movimientos",
