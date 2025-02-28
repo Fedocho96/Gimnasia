@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Cierre de fin de año",
+    "images": [
+      "/galeria/galeria1.png",
+      "/galeria/galeria2.png",
+      "/galeria/galeria3.png",
+      "/galeria/galeria4.png",
+      "/galeria/galeria5.png",
+      "/galeria/galeria6.png",
+      "/galeria/galeria7.png",
+      "/galeria/galeria8.png",
+      "/galeria/galeria9.png",
+      "/galeria/galeria10.png",
+      "/galeria/galeria11.png",
+      "/galeria/galeria12.png",
+      "/galeria/galeria13.png",
+      "/galeria/galeria14.png",
+      "/galeria/galeria15.png",
+      "/galeria/galeria16.png",
+      "/galeria/galeria17.png",
+      "/galeria/galeria18.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Clases",
+    "images": [
+      "/galeria/galeria6.png",
+      "/galeria/galeria7.png",
+      "/galeria/galeria8.png"
+    ]
+  }
+]

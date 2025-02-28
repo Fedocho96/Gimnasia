@@ -3,31 +3,12 @@ import contenido1 from "../assets/contenidoImg/contenido1.png";
 import contenido3 from "../assets/contenidoImg/contenido3.png";
 import contenido4 from "../assets/contenidoImg/contenido4.png";
 
-//imagenes para la galeria
-import galeria1 from "../assets/galeria/galeria1.png";
-import galeria2 from "../assets/galeria/galeria2.png";
-import galeria3 from "../assets/galeria/galeria3.png";
-import galeria4 from "../assets/galeria/galeria4.png";
-import galeria5 from "../assets/galeria/galeria5.png";
-import galeria6 from "../assets/galeria/galeria6.png";
-import galeria7 from "../assets/galeria/galeria7.png";
-import galeria8 from "../assets/galeria/galeria8.png";
-import galeria9 from "../assets/galeria/galeria9.png";
-import galeria10 from "../assets/galeria/galeria10.png";
-import galeria11 from "../assets/galeria/galeria11.png";
-import galeria12 from "../assets/galeria/galeria12.png";
-import galeria13 from "../assets/galeria/galeria13.png";
-import galeria14 from "../assets/galeria/galeria14.png";
-import galeria15 from "../assets/galeria/galeria15.png";
-import galeria16 from "../assets/galeria/galeria16.png";
-import galeria17 from "../assets/galeria/galeria17.png";
-import galeria18 from "../assets/galeria/galeria18.png";
 
 export const navItems = [
   { label: "Nosotros", href: "#About" },
   { label: "Contenido", href: "#Content" },
   { label: "Horarios", href: "#Schedule" },
-  { label: "Galeria", href: "#Galery" },
+  { label: "Galeria", href: "#Gallery" },
 ];
 
 export const content = [
@@ -36,28 +17,28 @@ export const content = [
     image: contenido1,
     title: "Barra fija",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam fugit sit, minus aut voluptas cumque numquam",
+      "Desarrollo de fuerza y coordinación mediante ejercicios en barra fija, mejorando la estabilidad y resistencia",
   },
   {
     number: 2,
     image: contenido1,
     title: "barra asimetrica",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam fugit sit, minus aut voluptas cumque numquam",
+      " Trabajo en altura y dinamismo, potenciando la agilidad, el control corporal y la fluidez en los movimientos",
   },
   {
     number: 3,
     image: contenido3,
     title: "Viga de equilibrio",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam fugit sit, minus aut voluptas cumque numquam",
+      "Desafío a la precisión y control, perfeccionando posturas, giros y saltos sobre una superficie estrecha",
   },
   {
     number: 4,
     image: contenido4,
     title: "Coreografia",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ullam fugit sit, minus aut voluptas cumque numquam",
+      "Expresión artística y técnica combinadas en rutinas que integran movimientos rítmicos, fuerza y creatividad",
   },
 ];
 
@@ -148,34 +129,3 @@ export const scheduleData = [
   },
 ];
 
-export const gallery = [
-  {
-    id: 1,
-    title: "Cierre de fin de año",
-    images: [
-      galeria1,
-      galeria2,
-      galeria3,
-      galeria4,
-      galeria5,
-      galeria6,
-      galeria7,
-      galeria8,
-      galeria9,
-      galeria10,
-      galeria11,
-      galeria12,
-      galeria13,
-      galeria14,
-      galeria15,
-      galeria16,
-      galeria17,
-      galeria18,
-    ],
-  },
-  {
-    id: 2,
-    title: "Clases",
-    images: [galeria4, galeria5, galeria6],
-  },
-];

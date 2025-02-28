@@ -1,50 +1,54 @@
-import React, { useState } from "react";
-import { gallery } from "../Constants";
-import ImageSlider from "../Components/ImageSlider";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const constrainRef = useRef(null); // Referencia para restringir el drag
+  const [gallery, setGallery] = useState([]);
 
-  const openModal = (index) => {
-    setActiveIndex(index);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => setIsOpen(false);
-
-  const nextImage = () =>
-    setActiveIndex((prevIndex) => (prevIndex + 1) % galery.length);
-
-  const prevImage = () =>
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + galery.length) % galery.length
-    );
+  useEffect(() => {
+    fetch("/gallery.json")
+      .then((res) => res.json())
+      .then((data) => setGallery(data))
+      .catch((err) => console.error("Error cargando la galería:", err));
+  }, []);
 
   return (
-    <section id="Galery " className="min-h-screen my-5">
-      <h2 className="my-4 py-3 text-center text-4xl tracking-tighter lg:text-5xl">
+    <section id="Gallery" className="my-5 container">
+      <h1 className="my-4 py-3 text-center text-4xl tracking-tighter lg:text-5xl">
         Galería
-      </h2>
+      </h1>
 
-      <motion.div
-        initial={{ opacity: 0, x: 70 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="space-y-8 "
-      >
-        {gallery.map((album) => (
-          <div className="flex flex-col items-center" key={album.id}>
-            <h2 className="text-4xl font-semibold text-center">
+      {gallery.length > 0 ? (
+        gallery.map((album, index) => (
+          <div className="" key={album.id}>
+            <h2 className="flex flex-col items-center justify-center text-center text-2xl font-semibold text-gray-700">
               {album.title}
+              <div className="h-1 w-6/12 border-t-4 border-dotted border-pink-400" />
             </h2>
-            <div className=" mb-5 mt-1 h-1 w-60 -rotate-1 bg-rose-400" />
-            <ImageSlider images={album.images} />
+
+            {/* Galería con Drag */}
+            <motion.div ref={constrainRef} className="overflow-hidden py-5">
+              <motion.div
+                className="flex gap-3 min-w-max cursor-grab active:cursor-grabbing"
+                drag="x"
+                dragConstraints={constrainRef}
+              >
+                {album.images.map((image, idx) => (
+                  <img
+                    key={idx}
+                    src={image}
+                    alt={`Imagen ${idx + 1} de ${album.title}`}
+                    loading="lazy"
+                    className="h-80 w-96 object-cover rounded-lg pointer-events-none"
+                  />
+                ))}
+              </motion.div>
+            </motion.div>
           </div>
-        ))}
-      </motion.div>
+        ))
+      ) : (
+        <p className="text-center text-gray-500">Cargando galería...</p>
+      )}
     </section>
   );
 };

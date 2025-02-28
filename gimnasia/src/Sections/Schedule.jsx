@@ -1,18 +1,24 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { scheduleData } from "../Constants";
 
 const Schedule = () => {
+  const { scrollY } = useScroll();
+
+  const scale = useTransform(
+    scrollY,
+    [2000, 2800, 3850, 4100],
+    [0.5, 1, 1, 0.8]
+  );
+
   return (
-    <section id="Schedule ">
+    <section id="Schedule">
       <h2 className=" mb-8 pt-5 text-center text-4xl tracking-tighter lg:text-5xl">
         Horarios
       </h2>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        style={{ scale }}
         className="min-h-screen  bg-[#8B4B76] relative overflow-hidden p-8 md:p-16 "
       >
         {/* Content */}
