@@ -1,8 +1,8 @@
 //imagenes para la seccion contenido
-import contenido1 from "../assets/contenidoImg/contenido1.png";
-import contenido3 from "../assets/contenidoImg/contenido3.png";
-import contenido4 from "../assets/contenidoImg/contenido4.png";
-
+import contenido1 from "/contenido/contenido1.webp";
+import contenido2 from "/contenido/contenido2.webp";
+import contenido3 from "/contenido/contenido3.webp";
+import contenido4 from "/contenido/contenido4.webp";
 
 export const navItems = [
   { label: "Nosotros", href: "#About" },
@@ -15,16 +15,16 @@ export const content = [
   {
     number: 1,
     image: contenido1,
-    title: "Barra fija",
+    title: "Salto",
     label:
-      "Desarrollo de fuerza y coordinación mediante ejercicios en barra fija, mejorando la estabilidad y resistencia",
+      "El salto en gimnasia artística es un aparato donde los gimnastas impulsan su cuerpo sobre una mesa de salto, realizando acrobacias en el aire antes de aterrizar.",
   },
   {
     number: 2,
-    image: "/contenido2.png",
-    title: "barra asimetrica",
+    image: contenido2,
+    title: "Paralelas asimetricas",
     label:
-      " Trabajo en altura y dinamismo, potenciando la agilidad, el control corporal y la fluidez en los movimientos",
+      " Las paralelas asimétricas son un aparato de gimnasia artística femenina con dos barras a diferente altura, donde la gimnasta realiza giros, saltos y transiciones con fuerza y coordinación.",
   },
   {
     number: 3,
@@ -36,96 +36,97 @@ export const content = [
   {
     number: 4,
     image: contenido4,
-    title: "Coreografia",
+    title: "Suelo",
     label:
-      "Expresión artística y técnica combinadas en rutinas que integran movimientos rítmicos, fuerza y creatividad",
+      "El suelo en gimnasia artística es un área donde los gimnastas realizan rutinas con acrobacias, saltos, giros y movimientos coreografiados, combinando fuerza, flexibilidad y expresión artística.",
   },
 ];
 
 export const scheduleData = [
   {
-    day: "lunes",
+    day: "Lunes",
     classes: [
       {
-        time: "19:00-20:00",
-        type: "Pole Exotic",
-        instructor: "Milagros Rosales",
-        spots: 6,
+        time: "18:30 - 19:30",
+        type: "Inicial 1",
+        instructor: "Mili, Nadi y Cele",
       },
-      { time: "20:15-21:15", type: "Pole Free", spots: 7 },
+      { time: "19:30-20:30", type: "Competencia", instructor: "Mili" },
     ],
   },
   {
-    day: "marțes",
+    day: "Marțes",
     classes: [
       {
-        time: "18:30-19:30",
-        type: "Pole 1+",
-        instructor: "Milagros Rosales",
-        spots: 7,
+        time: "10:30 - 11:30",
+        type: "KINDER T.M",
+        instructor: "Mili y Juli",
       },
-      { time: "19:30-20:30", type: "Pole 2", spots: 7 },
-    ],
-  },
-  {
-    day: "miercoles",
-    classes: [
       {
-        time: "19:00-20:00",
-        type: "Stretching",
-        instructor: "Milagros Rosales",
-        spots: 7,
+        time: "16:30 - 17:30",
+        type: "KINDER T.T",
+        instructor: "Mili y Juli",
       },
-    ],
-  },
-  {
-    day: "jueves",
-    classes: [
       {
-        time: "17:30-18:30",
-        type: "Pole 1",
-        instructor: "Milagros Rosales",
-        spots: 7,
+        time: "17:30 - 18:30",
+        type: "Intermedio 1",
+        instructor: "Mili y Juli",
       },
-      { time: "18:30-19:30", type: "Stretching", spots: 10 },
-      { time: "19:30-20:45", type: "Pole 2", spots: 7 },
-    ],
-  },
-  {
-    day: "viernes",
-    classes: [
       {
-        time: "19:00-20:00",
-        type: "Stretching",
-        instructor: "Milagros Rosales",
-        spots: 7,
+        time: "18:30 - 19:30",
+        type: "Intermedio 2",
+        instructor: "Mili, Nadi y Cele",
+      },
+      {
+        time: "19:30 - 21:00",
+        type: "Avanzados",
+        instructor: "Mili",
       },
     ],
   },
   {
-    day: "sabado",
+    day: "Miercoles",
     classes: [
       {
-        time: "11:00-12:15",
-        type: "Exotic Tricks",
-        instructor: "Milagros Rosales",
-        spots: 7,
+        time: "18:30 - 19:30",
+        type: "Incial 1",
+        instructor: "Mili, Nadi y Cele",
       },
-      { time: "12:15-13:15", type: "Stretching", spots: 10 },
-      { time: "13:15-14:15", type: "Pole Free", spots: 7 },
+      {
+        time: "19:30 - 20:30",
+        type: "Competencia",
+        instructor: "Mili",
+      },
     ],
   },
   {
-    day: "domingo",
+    day: "Jueves",
     classes: [
       {
-        time: "11:30-12:30",
-        type: "Pole 3",
-        instructor: "Milagros Rosales",
-        spots: 10,
+        time: "10:30 - 11:30",
+        type: "Kinder T.M",
+        instructor: "Mili y Juli",
       },
-      { time: "12:30-13:30", type: "Pole Free", spots: 7 },
+      {
+        time: "16:30 - 17:30",
+        type: "Kinder T.T",
+        instructor: "Mili y Juli",
+      },
+      {
+        time: "17:30 - 18:30",
+        type: "Intermedio 1",
+        instructor: "Mili y Juli",
+      },
+      {
+        time: "18:30 - 19:30",
+        type: "Intermedio 2",
+        instructor: "Mili, Nadi y Cele",
+      },
+      {
+        time: "19:30 - 21:00",
+        type: "Avanzados",
+        instructor: "Mili",
+      },
     ],
   },
 ];
-

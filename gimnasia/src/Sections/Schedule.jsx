@@ -3,13 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { scheduleData } from "../Constants";
 
 const Schedule = () => {
-  const { scrollY } = useScroll();
+  const { scrollYProgress } = useScroll();
 
-  const scale = useTransform(
-    scrollY,
-    [2000, 2800, 3850, 4100],
-    [0.5, 1, 1, 0.8]
-  );
+  const scale = useTransform(scrollYProgress, [0.3, 0.6, 0.75, 0.87], [0.5, 1, 1, 0.7]);
 
   return (
     <section id="Schedule">
@@ -19,7 +15,7 @@ const Schedule = () => {
 
       <motion.div
         style={{ scale }}
-        className="min-h-screen  bg-[#8B4B76] relative overflow-hidden p-8 md:p-16 "
+        className="min-h-screen  bg-[#8B4B76] relative overflow-hidden p-4 md:p-16 "
       >
         {/* Content */}
         <div className="relative z-10">
@@ -31,7 +27,7 @@ const Schedule = () => {
             {scheduleData.map((day) => (
               <div
                 key={day.day}
-                className="flex flex-col md:flex-row items-start gap-4"
+                className="flex flex-col md:flex-row items-start gap-1"
               >
                 {/* Day of the week */}
                 <div className="w-32 md:w-48">

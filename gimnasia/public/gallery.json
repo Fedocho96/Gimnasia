@@ -3,33 +3,45 @@
     "id": 1,
     "title": "Cierre de fin de año",
     "images": [
-      "/galeria/galeria1.png",
-      "/galeria/galeria2.png",
-      "/galeria/galeria3.png",
-      "/galeria/galeria4.png",
-      "/galeria/galeria5.png",
-      "/galeria/galeria6.png",
-      "/galeria/galeria7.png",
-      "/galeria/galeria8.png",
-      "/galeria/galeria9.png",
-      "/galeria/galeria10.png",
-      "/galeria/galeria11.png",
-      "/galeria/galeria12.png",
-      "/galeria/galeria13.png",
-      "/galeria/galeria14.png",
-      "/galeria/galeria15.png",
-      "/galeria/galeria16.png",
-      "/galeria/galeria17.png",
-      "/galeria/galeria18.png"
+      "/galeriawebp/galeria1.webp",
+      "/galeriawebp/galeria2.webp",
+      "/galeriawebp/galeria3.webp",
+      "/galeriawebp/galeria4.webp",
+      "/galeriawebp/galeria5.webp",
+      "/galeriawebp/galeria6.webp",
+      "/galeriawebp/galeria7.webp",
+      "/galeriawebp/galeria8.webp",
+      "/galeriawebp/galeria9.webp",
+      "/galeriawebp/galeria10.webp",
+      "/galeriawebp/galeria11.webp",
+      "/galeriawebp/galeria12.webp",
+      "/galeriawebp/galeria13.webp",
+      "/galeriawebp/galeria14.webp",
+      "/galeriawebp/galeria15.webp",
+      "/galeriawebp/galeria16.webp",
+      "/galeriawebp/galeria17.webp",
+      "/galeriawebp/galeria18.webp"
     ]
   },
   {
     "id": 2,
-    "title": "Clases",
+    "title": "Bonaerenses",
     "images": [
-      "/galeria/galeria6.png",
-      "/galeria/galeria7.png",
-      "/galeria/galeria8.png"
+      "/bonaerenses/bonaerenses1.webp",
+      "/bonaerenses/bonaerenses2.webp",
+      "/bonaerenses/bonaerenses3.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Torneos",
+    "images": [
+      "/torneos/torneos1.webp",
+      "/torneos/torneos2.webp",
+      "/torneos/torneos3.webp",
+      "/torneos/torneos4.webp",
+      "/torneos/torneos5.webp",
+      "/torneos/torneos6.webp"
     ]
   }
 ]

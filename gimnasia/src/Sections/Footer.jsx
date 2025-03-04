@@ -10,31 +10,30 @@ const Footer = () => {
         <div className="flex flex-col gap-3 items-center md:items-baseline">
           <div>
             <h2 className="text-[#ff9bca] text-2xl">Nuestra direccion</h2>
-            <p className="text-white">Calle ldksjdkfld, piso 2</p>
+            <p className="text-white">Calle Chascomus 165</p>
             <p className="text-white">Dolores, Buenos Aires</p>
           </div>
 
           <div>
-            <h2 className="text-[#ff9bca] text-2xl"> Ponte en contacto</h2>
-            <p className=" flex items-center text-white gap-2">
-              {" "}
+            <h2 className="text-[#ff9bca] text-2xl">Ponte en contacto</h2>
+            <p className="flex items-center text-white gap-2">
               <MdOutlineLocalPhone />
-              02245xxxxx
+              2245-517640
             </p>
             <p className="flex items-center text-white gap-2">
-              {" "}
               <CiMail />
               mili.rosales@hotmail.com
             </p>
             <p className="flex items-center text-white gap-2">
-              {" "}
               <CiInstagram />
-              Instagram
-            </p>
-            <p className="flex items-center text-white gap-2">
-              {" "}
-              <BsTwitterX />
-              Twitter-X
+              <a
+                href="https://www.instagram.com/gimnasiaartistica.mr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                @gimnasiaartistica.mr
+              </a>
             </p>
           </div>
         </div>

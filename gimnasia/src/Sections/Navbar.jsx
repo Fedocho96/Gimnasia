@@ -15,13 +15,12 @@ const Navbar = () => {
     e.preventDefault(); // Evita el comportamiento por defecto
     setMobileDrawerOpen(false); // Cierra el menú móvil si está abierto
 
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80, // Ajuste para navbar sticky
-        behavior: "smooth",
-      });
-    }
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100); // Espera 100ms antes de ejecutar el scroll
   };
 
   return (
